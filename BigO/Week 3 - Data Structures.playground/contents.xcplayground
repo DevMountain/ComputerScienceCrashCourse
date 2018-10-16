@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Day 1 - Binary Search Trees'/>
+        <page name='Day 2 - Heap, Trie'/>
+        <page name='Day 3 - Set, Set Theory'/>
+        <page name='Day 4 - Graphs'/>
+    </pages>
+</playground>

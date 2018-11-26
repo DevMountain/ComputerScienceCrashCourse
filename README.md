@@ -9,7 +9,7 @@ Computer Science is the basis for everything you've learned at DevMountain. Ther
 
 ### Week 1 - Big O Notation
 
-* __Monday__ - Define what Big O is, Recognize O(n), O(1), O(n²)
+* __Monday__ - Define what Big O is, Recognize O(n), O(1), O(n²) 
 * __Tuesday__ - Define O(log n), O(2^n). Describe real life examples of O(n), O(1), O(n²)
 * __Wednesday__ - Apply Big O to previous stretch problems. Describe real like examples of O(log n), O(2^n)
 * __Thursday__ - Distinguish which Big O's are the fastest / most efficient. Distinguish between time and space complexity

@@ -38,6 +38,7 @@ extension TreeNode {
 extension TreeNode where T: Equatable {
     public func search(_ value: T) -> TreeNode? {
         var result: TreeNode?
+        
         forEachDepthFirst { node in
             if node.value == value {
                 result = node

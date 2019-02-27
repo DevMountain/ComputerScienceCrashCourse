@@ -1,6 +1,6 @@
 // Week 5 - Day 2 - Observer and Decorator Pattern
 
-
+//VIDEO WALKTHROUGH: https://vimeo.com/308815351
 //
 // Observer Pattern
 //
@@ -11,7 +11,7 @@ protocol PropertyObserver : class {
 
 final class TestChambers {
     
-    weak var observer:PropertyObserver?
+    weak var observer: PropertyObserver?
     
     private let testChamberNumberName = "testChamberNumber"
     

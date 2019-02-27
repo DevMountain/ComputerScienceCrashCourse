@@ -1,5 +1,8 @@
 // Week 6 - Day 2 - Proxy Pattern
 
+//VIDEO WALKTHROUGH: - https://vimeo.com/308815767
+
+import Foundation
 
 // This is the interface that the concrete class and the proxy both implement.
 protocol IBookParser {

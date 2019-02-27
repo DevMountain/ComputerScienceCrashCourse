@@ -6,145 +6,27 @@
 let array1: [Int] = [1,2,3,5,6,3,4,5,2]
 let array2: [Int] = [0,1,2,3,4,5,6,7,8,9,10]
 
-// O(n)
-func sumAndProduct(array: [Int]) {
-    print("\n\n")
-    var sum = 0
-    var product = 1
-    for i in 0..<array.count {
-        sum += array[i]
-    }
-    for i in 0..<array.count {
-        product *= array[i]
-    }
-    print("sum is: \(sum)")
-    print("product is: \(product)")
-    print("\n\n")
-}
-
-sumAndProduct(array: array1)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// O(n^2)
-func printPairs(array: [Int]) {
-    print("\n\n")
-    for i in 0..<array.count {
-        for j in 0..<array.count {
-            print("(\(array[i]), \(array[j]))")
-        }
-    }
-    print("\n\n")
-}
-
-printPairs(array: array2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// O(n^2/2) -> O(n^2)
-
-func printPairsUnordered(array: [Int]) {
-    print("\n\n")
-    for i in 0..<array.count {
-        for j in i..<array.count {
-            print("(\(array[i]), \(array[j]))")
-        }
-    }
-    print("\n\n")
-}
-
-
-printPairsUnordered(array: array2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let sortedArray = [1,2,3,5,7,8,10,13,14,16,20,21]
 
-//func find(num: Int, inArray array: [Int]) -> Bool {
-//    for number in array {
-//        if num == number {
-//            return true
-//        }
-//    }
-//    return false
-//}
-//
-//
-//find(num: 3, inArray: sortedArray)
-//
+func smartFind(num: Int, inArray array: [Int]) -> Bool {
+    for number in array {
+        if num == number {
+            return true
+        }
+    }
+    return false
+}
 
+//dumbFind(num: 3, inArray: sortedArray)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+func dumbFind(num: Int, inArray array: [Int]) -> Bool{
+  var found: Bool = false
+  for
+}
 
 
 // ASSUMPTION: The array we're using is sorted
+//log(n) Logarithmic Time
 func find(num: Int, inArray array: [Int]) -> Bool {
     let middleIndex = array.count / 2
     
@@ -164,37 +46,15 @@ func find(num: Int, inArray array: [Int]) -> Bool {
 find(num: 8, inArray: sortedArray)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-func doSomethingWith(array: [Int]) {
-    for i in 0...5 {
-        print(i)    
-    }
-}
-
-
-
-
-
-
-
-
-
+//func calculateRandomJunk(n: Int) -> Int{
+//    if n == 0{
+//        return 1
+//    }
+//    print("Calculating Junk n is \(n)")
+//    return calculateRandomJunk(n: n-1) + calculateRandomJunk(n: n - 2)
+//}
+//
+//calculateRandomJunk(n: 22)
 
 
 
@@ -231,31 +91,6 @@ func doSomethingWith(array: [Int]) {
 // Do we care about what base the log is?
 // Why do we use log_2 as a default?
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Exponential
 // O(2^n) and it's variants
 
@@ -271,25 +106,6 @@ f(2)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Assignment
 // Give a real life example of both O(log n) and O(2^n)
 // What is the detailed and simplified Big O of this function?
@@ -302,5 +118,54 @@ func sumDigits(n: Int) -> Int {
     }
     return sum
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

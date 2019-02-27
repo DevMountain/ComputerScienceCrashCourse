@@ -1,5 +1,7 @@
 // Week 5 - Day 1 - Strategy Pattern
+import UIKit
 
+//VIDEO WALKTHROUGH: https://vimeo.com/308815351
 
 // Strategy Pattern
 

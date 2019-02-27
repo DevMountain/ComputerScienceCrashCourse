@@ -5,8 +5,8 @@
         <page name='Stack'/>
         <page name='Queue'/>
         <page name='GeneralPurposeTree'/>
+        <page name='BasicBinarySearchTree (Teach this in Class)'/>
         <page name='BinarySearchTree'/>
         <page name='Heaps'/>
-        <page name='Trie'/>
     </pages>
 </playground>

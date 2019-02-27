@@ -1,5 +1,7 @@
 import Foundation
 
+//VIDEO WAlKTHROUGH: - https://vimeo.com/308815548
+
 protocol Coffee {
   func getCost() -> Double
   func getIngredients() -> String

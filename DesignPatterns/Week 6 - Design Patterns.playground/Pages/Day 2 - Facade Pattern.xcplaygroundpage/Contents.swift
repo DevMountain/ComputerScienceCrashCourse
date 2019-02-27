@@ -1,6 +1,40 @@
 // Week 6 - Day 1 - Facade Pattern
 
+//VIDEO WAlKTHROUGH: - https://vimeo.com/311514133
+
 import Foundation
+
+class Navigation{
+  static func getMeDirectionsHome(){
+    print("Getting directions home")
+  }
+}
+
+class UberEats{
+  static func orderIndianFood(){
+    print("Ordering Indian Food")
+  }
+}
+
+class Messaging{
+  static func textMyWifeImHeadingHome(){
+    print("Texting your wife I'm heading home")
+  }
+}
+
+class SiriShortCutFacade{
+  
+  static func siriImHeadingHome(){
+    Navigation.getMeDirectionsHome()
+    UberEats.orderIndianFood()
+    Messaging.textMyWifeImHeadingHome()
+  }
+  
+}
+
+
+/////////////////////////////////////////////////////////////////////////////
+//Other Example
 
 enum Eternal {
     
@@ -21,33 +55,3 @@ Eternal.set("Disconnect me. I’d rather be nothing", forKey:"Bishop")
 Eternal.object(forKey: "Bishop")
 
 
-/////////////////////////////////////////////////////////////////////////////
-//Other Example
-
-class Navigation{
-    static func getMeDirectionsHome(){
-        print("Getting directions home")
-    }
-}
-
-class UberEats{
-    static func orderIndianFood(){
-        print("Ordering Indian Food")
-    }
-}
-
-class Messaging{
-    static func textMyWifeImHeadingHome(){
-        print("Texting your wife I'm heading home")
-    }
-}
-
-class SiriShortCutFacade{
-    
-    static func siriImHeadingHome(){
-        Navigation.getMeDirectionsHome()
-        UberEats.orderIndianFood()
-        Messaging.textMyWifeImHeadingHome()
-    }
-    
-}

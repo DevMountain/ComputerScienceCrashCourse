@@ -1,5 +1,5 @@
 // Big O Day 3 - Practice & Ordering Big O
-
+import Foundation
 
 // Here are some previous stretch problems and their solutions. We're going to analyze their Big O.
 func isPalindrome(_ input: String) -> Bool {
@@ -27,6 +27,9 @@ func gcd(_ a: Int, _ b: Int) -> Int {
 
 func gcdEuclid(_ a: Int, _ b: Int) -> Int {
     let remainder = a % b
+  print("a: \(a)")
+  print("b: \(b)")
+  print("remainder: \(remainder)")
     if remainder == 0 {
         return b
     } else {
@@ -34,6 +37,7 @@ func gcdEuclid(_ a: Int, _ b: Int) -> Int {
     }
 }
 
+gcdEuclid(50, 17)
 
 
 

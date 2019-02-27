@@ -1,5 +1,9 @@
 import Foundation
 
+//MARK: - VIDEO LINKS
+//Conceptual Overview and live walkthrough of this implementation:  https://vimeo.com/304094785
+
+
 public class TreeNode<T> {
     
     public var value: T

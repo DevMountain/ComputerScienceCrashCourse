@@ -328,12 +328,12 @@ var exampleTree: BinarySearchTree<Int> {
 // Can a BST have duplicate nodes?
 // Yes you have to change the way that the BST is organized though and it might add complexity to the tree.
 // (i.e. Linked list of duplicated at each node, or a left: <= while right: > rule.)
-
+exampleTree.description
 
 
 // Assignment
 // Make a Degenerate Tree
-BinarySearchTree.node(.empty, "0", BinaryTree.node(.empty, "1", BinaryTree.node(.empty, "2", BinaryTree.node(.empty, "3", .empty))))
+BinarySearchTree.node(.empty, "0", BinaryNode.node(.empty, "1", BinaryTree.node(.empty, "2", BinaryTree.node(.empty, "3", .empty))))
 // Make a Perfect Tree
 BinarySearchTree.node(BinaryTree.node(.empty, "2", .empty), "1", BinaryTree.node(.empty, "2", .empty))
 // Make a Binary Seach Tree

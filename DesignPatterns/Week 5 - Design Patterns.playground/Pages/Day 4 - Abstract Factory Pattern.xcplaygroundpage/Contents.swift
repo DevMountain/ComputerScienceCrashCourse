@@ -1,5 +1,6 @@
 // Week 5 - Day 4 - Abstract Factory Pattern
 
+//VIDEO WALKTHROUGH: - https://vimeo.com/308815485
 
 // 1. The Abstract Factory Pattern
 // 2. The Problem - You have multiple versions of _________ that you need to create.
@@ -53,10 +54,6 @@ class PorscheSedan: AbstractSedan {
         print("You're driving an Porsche Sedan")
     }
 }
-
-
-
-
 
 // Porsche, Volkswagen, Audi
 

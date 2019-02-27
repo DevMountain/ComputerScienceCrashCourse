@@ -1,7 +1,7 @@
 import Foundation
 
 //MARK: - VIDEO LINKS
-//Conceptual Overview of a Stack:
+//Conceptual Overview of a Basic Binary Search Tree:  https://vimeo.com/320114007
 //Live Walkthrough of this Implementation: https://vimeo.com/devmountain/review/320111190/a55f511fa3
 
 public class BSTNode<T: Comparable> {

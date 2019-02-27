@@ -137,3 +137,80 @@ for comment in comments {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Examples
+
+func multiplyAllNumbersThrough(number: Int) {
+    for i in 0..<number {
+        for j in 0..<number {
+            print(i * j)
+        }
+    }
+}
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+var sum = 0
+func linearTime(numbers: [Int]) {
+    for number in numbers{
+        sum += number
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

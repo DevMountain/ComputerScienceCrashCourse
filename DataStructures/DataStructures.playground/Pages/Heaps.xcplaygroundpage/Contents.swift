@@ -1,6 +1,10 @@
 //: [Previous](@previous)
 import UIKit
 
+//MARK: - VIDEO LINKS
+//Conceptual Overview and live walkthrough of this implementation:  https://vimeo.com/304967758
+
+
 class MinHeap<T: Comparable>{
     //MARK: - Helpers
     

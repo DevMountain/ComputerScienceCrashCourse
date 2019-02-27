@@ -1,5 +1,10 @@
 import Foundation
 
+//MARK: - VIDEO LINKS
+//Conceptual Overview of a Stack: https://vimeo.com/devmountain/review/320111190/a55f511fa3
+//Live Walkthrough of this Implementation:  https://vimeo.com/devmountain/review/320111352/f8f3e0d43a
+
+
 public struct Stack<Element> {
     private var storage: [Element] = []
     public init() {}

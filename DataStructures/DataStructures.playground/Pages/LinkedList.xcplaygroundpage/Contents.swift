@@ -1,5 +1,9 @@
 import Foundation
 
+//MARK: - VIDEO LINKS
+//Conceptual Overview of a Linked List: https://vimeo.com/devmountain/review/320108637/f6ff990457
+//Live Walkthrough of implementation: https://vimeo.com/devmountain/review/320109169/c5e762c66f
+
 public class Node<Value> {
     public var value: Value
     public var next: Node?

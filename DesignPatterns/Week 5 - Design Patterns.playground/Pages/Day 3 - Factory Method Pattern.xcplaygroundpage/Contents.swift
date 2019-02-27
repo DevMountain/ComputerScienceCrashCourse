@@ -1,9 +1,8 @@
 // Week 5 - Day 3 - Factory Method Pattern
 
+//VIDEO WALKTHROUGH: https://vimeo.com/308815639
 
-//
-// Factory Method Pattern
-//
+import Foundation
 
 protocol Currency {
     func symbol() -> String

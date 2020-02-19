@@ -19,10 +19,10 @@ func smartFind(num: Int, inArray array: [Int]) -> Bool {
 
 //dumbFind(num: 3, inArray: sortedArray)
 
-func dumbFind(num: Int, inArray array: [Int]) -> Bool{
-  var found: Bool = false
-  for
-}
+//func dumbFind(num: Int, inArray array: [Int]) -> Bool{
+//  var found: Bool = false
+//
+//}
 
 
 // ASSUMPTION: The array we're using is sorted
@@ -55,30 +55,6 @@ find(num: 8, inArray: sortedArray)
 //}
 //
 //calculateRandomJunk(n: 22)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -119,53 +95,6 @@ func sumDigits(n: Int) -> Int {
     return sum
 }
 
+//: [Previous](@previous)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//: [Next](@next)

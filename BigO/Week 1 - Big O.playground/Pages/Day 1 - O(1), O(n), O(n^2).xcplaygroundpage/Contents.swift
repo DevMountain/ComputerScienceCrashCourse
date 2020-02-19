@@ -1,14 +1,33 @@
-// Big O Day 1 - O(1), O(n), O(n^2)
+// Big O Day 1 - O(1)-Constant, O(n)-Linear, O(n^2)-Quadratic
 
+
+// Constant Time
+// O(1)
+// O(6) == O(1)
 
 var array: [Int] = [1,2,3,4,5,6,7,8,9,10]
 
-func whyWouldYouDoThis(_ array: [Int]) {
+func constantLoop() {
+    for i in 0...5 {
+        print(array[i])
+    }
+}
+
+constantLoop()
+
+
+// O(n)
+func linearLoop(_ array: [Int]) {
     // Print Each Element
     for a in array {
         print(a)
     }
+}
     
+linearLoop(array)
+
+// O(n^2)
+func quadraticLoop(_ array: [Int]) {
     // Prints pairs
     for a in array {
         for b in array {
@@ -17,48 +36,40 @@ func whyWouldYouDoThis(_ array: [Int]) {
     }
 }
 
-whyWouldYouDoThis(array)
+quadraticLoop(array)
 
-// O(1)
-// O(6) == O(1)
-
-func printNumbers1Through5() {
-    for i in 0...5 {
-        print(array[i])
-    }
-}
-
-//Adding big O together
+// Adding big O together
 // O(n + n) = O(2n) = O(n)
-for i in array {
-    print(i)
-}
-// +
-for i in array {
-    print(i)
-}
-
-//Multiplying big O together
-// O(n * n) == O(n^2)
-for i in array {
-    for j in array {
-        print("\(i)\(j)")
+func linearLoop(_array: [Int]) {
+    for i in array {
+        print(i)
+    }
+    // +
+    for i in array {
+        print(i)
     }
 }
 
-
-// O(n^3)
-for i in array { //O(n)
-    for j in array { // O(n)
-        for k in array { // O(n)
-            print("\(i)\(j)\(k)")
+// Adding Quadratic Loops
+// Below example is O(n^2)+(n^2) == O2(n^2)
+func doubledQuadraticLoop(_ array: [Int]) {
+    for i in array {
+        // *
+        for j in array {
+            print("\(i)\(j)")
+        }
+    }
+    //+
+    for i in array {
+        // *
+        for j in array {
+            print("\(i)\(j)")
         }
     }
 }
 
 // Gotcha with algorithms
 /// The average time for goodLinearSearch is better, however the order of growth is the same. O(n)
-
 
 func badLinearSearch(array: [Int], element: Int) -> Bool {
     var found = false
@@ -84,15 +95,11 @@ func goodLinearSearch(array: [Int], element: Int) -> Bool {
 
 
 // What is the Big O of the following funciton?
-// O(n^2 + n^3) -> O(n^3)
-
 // n((n*1) + (n*n))
-// n(n + n^2)
-// n^2 + n^3
 
-
-
-
+// n((n*1) + (n*n)) starting point
+// n(n + n^2) step 2
+// n^2 + n^3 final reduction
 
 
 // Simplifying Big O
@@ -135,36 +142,6 @@ for comment in comments {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Examples
 
 func multiplyAllNumbersThrough(number: Int) {
@@ -183,34 +160,4 @@ func linearTime(numbers: [Int]) {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//: [Next](@next)
